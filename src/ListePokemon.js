@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import './ListePokemon.css';
 
@@ -23,7 +24,9 @@ export default function ListePokemon() {
 
     return(
         <div className='ListePokemon'>
-            <button className='ListePokemon-add'>Ajouter un pokémon au Pokédex</button>
+            <Link to="/ajouter-un-pokemon">
+                <button className='ListePokemon-add'>Ajouter un pokémon au Pokédex</button>
+            </Link>
             <div className='ListePokemon-all'>
                 {
                     pokemons.map( p => {
@@ -41,7 +44,9 @@ export default function ListePokemon() {
                                     </li>
                                 </ul>
                                 <div>
-                                    <button className='Pokemon-details'>Détails...</button>
+                                    <Link to={"/pokemon/" + p.num}>
+                                        <button className='Pokemon-details'>Détails...</button>
+                                    </Link>
                                 </div>
                             </div>
                         )

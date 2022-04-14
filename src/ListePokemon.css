@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+.ListePokemon a {
+    text-decoration: none;
+}
+
 .ListePokemon-add, .Pokemon-details {
     display: block;
     margin-top: 2rem;
