@@ -66,6 +66,27 @@ ul li {
     margin-bottom: 5px;
 }
 
+.Pokemon-li_type, .Pokemon-li_weaknesses {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.Pokemon-type {
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+}
+
+.Pokemon-type img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
 .Pokemon-details {
     width: auto;
     height: auto;
