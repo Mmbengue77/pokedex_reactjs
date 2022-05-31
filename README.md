@@ -27,7 +27,17 @@ Les éléments suivants devront être obligatoirement présents :
 De manière optionnelle, vous pouvez utiliser :
 -  Routage dynamique (plusieurs "pages")
 
-Groupe :
+# Groupe
 - Cynthia RABEMANANTSOA 
 - Sadio TOURE
 - Mohamed MBENGUE
+
+# Fonctionnalités
+- Lecture des cartes de chaque pokémon avec le minimum d'informations (nom, numéro, type(s), faiblesse(s))
+- Lien vers la page d'ajout
+- Lien vers la page d'une fiche Pokémon (bouton Détails)
+
+# Difficultés rencontrées
+- Intégration
+- GitHub pour certains d'entre nous (push sur notre branche)
+- Gérer les exceptions liées à l'API externe (ex: caractères spéciaux, etc.)
