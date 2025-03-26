@@ -1,3 +1,8 @@
+/** 
+ *  La liste des pokémons
+ *  Partie fait par Cynthia RABEMANANTSOA (E3 DAD A)
+*/
+
 import React from 'react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -81,7 +86,7 @@ export default function ListePokemon() {
         
         // Si un seul type est passé en paramètre, il suffit de l'afficher.
         // Sinon, il faut procéder en plusieurs étapes :
-        //      - on convertie la liste des types en une chaîne de caractères dans laquelle
+        //      - on convertit la liste des types en une chaîne de caractères dans laquelle
         //        chaque type est séparé d'une virgule grâce à la fonction join() ; le résultat
         //        sera stocké dans la constante typesName
         //      - ensuite, on stocke dans la constante typesURL toutes les URLs grâce à la
@@ -119,9 +124,11 @@ export default function ListePokemon() {
 
     return(
         <div className='ListePokemon'>
-            <Link to="/ajouter-un-pokemon">
-                <button className='ListePokemon-add'>Ajouter un pokémon au Pokédex</button>
-            </Link>
+            <div className='ListePokemon-add_zone'>
+                <Link to="/ajouter-un-pokemon">
+                    <button className='ListePokemon-add'>Ajouter un pokémon au Pokédex</button>
+                </Link>
+            </div>
             <div className='ListePokemon-all'>
                 {
                     pokemons.map( p => {
